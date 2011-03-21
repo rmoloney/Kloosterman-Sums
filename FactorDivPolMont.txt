@@ -1,0 +1,10 @@
+k:=GF(101);
+//Q<a>:=PolynomialRing(k);
+a:=Random(k);
+//_<x>:=PolynomialRing(Q);
+_<x>:=PolynomialRing(k);
+psi:= x^4+2*a*x^3+6*(1-2*a^2)*x^2-2*a*(3-7*a^2)*x+(1-5*a^4);
+a;
+Factorization(psi);
+IsSquare(3*a+2);
+IsSquare(3*a-2);
